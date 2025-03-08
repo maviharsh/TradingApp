@@ -1,6 +1,6 @@
 const {UserModel} = require("../model/UserModel");
 const { createSecretToken } = require("../util/SecretToken");
-const bcrypt = require("bcryptjs");
+const bcrypt=require("bcryptjs");
 
 module.exports.Signup = async (req, res) => {
   console.log("Signup request received:", req.body); // Log request body
