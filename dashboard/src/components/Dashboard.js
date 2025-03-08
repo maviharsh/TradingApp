@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   useEffect(()=>{
         const authstatus=async()=>{
-          await axios.get("http://localhost:3000/islogin",{ withCredentials: true })
+          await axios.get("https://tradingapp-backend.onrender.com/islogin",{ withCredentials: true })
           .then((response)=>{
             console.log(response.data.status);
             if(response.data.status)
