@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import GeneralContext from "./GeneralContext"; // ✅ Import Context
 import "./BuyActionWindow.css";
-import {  toast } from "react-toastify";
 
 
 const BuyActionWindow = ({ uid }) => {
@@ -24,7 +23,6 @@ const BuyActionWindow = ({ uid }) => {
         console.log("Order placed successfully:", response.data);
       })
       .catch((err) => {
-        toast.error("Error in Buying an Order");
         console.error("Error placing order:", err);
       });
 
