@@ -19,7 +19,7 @@ const Menu = () => {
   }
 
   const handleClick=async()=>{
-    await axios.get("http://localhost:3000/logout",{ withCredentials: true })
+    await axios.get("https://tradingapp-backend.onrender.com/logout",{ withCredentials: true })
     .then((response)=>{
           console.log(response);
           navigate("/");  

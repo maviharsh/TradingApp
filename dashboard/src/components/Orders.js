@@ -10,7 +10,7 @@ const Orders = () => {
 
   useEffect(()=>{
       const getOrders=async()=>{
-        await axios.get("http://localhost:3000/getorders",{ withCredentials: true })
+        await axios.get("https://tradingapp-backend.onrender.com/getorders",{ withCredentials: true })
         .then((response)=>{
            console.log(response.data.message);
            setOrders(response.data.message);
