@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import GeneralContext from "./GeneralContext"; 
 import "./BuyActionWindow.css";
-import {  toast } from "react-toastify";
 
 
 const SellActionWindow = ({ uid }) => {
@@ -23,7 +22,6 @@ const SellActionWindow = ({ uid }) => {
         console.log("Order sold successfully:", response.data);
       })
       .catch((err) => {
-        toast.error("Error in selling order");
         console.error("Error selling order:", err.response.data.message);
       });
 
