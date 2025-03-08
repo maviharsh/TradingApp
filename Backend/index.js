@@ -15,7 +15,7 @@ const { UserModel } = require("./model/UserModel");
 
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: "https://tradingapp-dashboard.onrender.com",
     credentials: true,
   })
 );
